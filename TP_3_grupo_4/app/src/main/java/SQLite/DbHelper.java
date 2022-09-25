@@ -50,6 +50,12 @@ public class DbHelper extends SQLiteOpenHelper {
         this.getWritableDatabase().insert(BD_Info.usersTable,null,values);
     }
 
+    public Users getUser(Users user) {
+        ContentValues values = new ContentValues();
+
+        return null;
+    }
+
     public void createParking(Parkings parkings){
         ContentValues values = new ContentValues();
 
