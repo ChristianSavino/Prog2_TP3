@@ -50,6 +50,15 @@ public class DbHelper extends SQLiteOpenHelper {
         this.getWritableDatabase().insert(BD_Info.usersTable,null,values);
     }
 
+    public Cursor consultarUserPass (String name, String password){
+        Cursor c = null;
+        c = this.getReadableDatabase().query(BD_Info.usersTable, new String[]{BD_Info.usersColumnId,
+                 BD_Info.usersNameColumn, BD_Info.usersEmailColumn, BD_Info.usersPasswordColumn},
+                "Name like '"+name+"' and Password like '"+password+"'",
+                null, null, null, null);
+        return c ;
+    }
+
     public Users getUser(Users user) {
         ContentValues values = new ContentValues();
 

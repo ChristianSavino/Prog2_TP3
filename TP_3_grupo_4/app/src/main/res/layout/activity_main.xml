@@ -87,6 +87,7 @@
         android:layout_marginTop="32dp"
         android:background="@drawable/custom_button"
         android:backgroundTint="@null"
+        android:onClick="Ingresar"
         android:text="Iniciar Sesion"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
