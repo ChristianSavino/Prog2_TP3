@@ -3,11 +3,13 @@ package com.example.tp_3_grupo_4;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
-import SQLite.BD_Info;
 import SQLite.DbHelper;
 import model.Users;
 
@@ -18,36 +20,51 @@ public class Registrarse extends AppCompatActivity {
     private TextView passwordText;
     private TextView confirmPasswordText;
 
-    DbHelper dbHelper;
+    DbHelper dbHelper = new DbHelper(this, "BDP",null,1);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_registrarse);
+
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.primaryDark)));
+
         nameText = (TextView) findViewById(R.id.etNombre);
         mailText = (TextView) findViewById(R.id.etMail);
         passwordText = (TextView) findViewById(R.id.etNuevaContrasenia);
         confirmPasswordText = (TextView) findViewById(R.id.etRepetirContrasenia);
-        setContentView(R.layout.activity_registrarse);
-        dbHelper = new DbHelper(getApplicationContext(), BD_Info.usersTable,null,1);
     }
 
-    public void Aceptar(View view){
-        boolean validated = true;
+    public void Aceptar(View view) {
+        dbHelper.openDB();
+        String user = nameText.getText().toString();
+        String password = passwordText.getText().toString();
+        String mail = mailText.getText().toString();
+        String ConfPassword = confirmPasswordText.getText().toString();
 
-        if(passwordText.getText().toString() != confirmPasswordText.getText().toString())
-            validated = false;
+        if (TextUtils.isEmpty(user) || TextUtils.isEmpty(password) || TextUtils.isEmpty(mail) || TextUtils.isEmpty(ConfPassword)) {
+            Toast.makeText(this, "Todos los campos deben ser completados", Toast.LENGTH_SHORT).show();
+        }else{
+        Users u = new Users();
+        u.setId(0);
+        u.setName(user);
+        u.setEmail(mail);
+        u.setPassword(password);
 
-        Users user = new Users(0,nameText.getText().toString(),mailText.getText().toString(),passwordText.getText().toString());
-
-        user = dbHelper.getUser(user);
-
-        if(user.getId() != 0)
-            validated = false;
-
-        if(validated) {
-            dbHelper.createUser(user);
-            Intent aceptar = new Intent(this, MainActivity.class);
-            startActivity(aceptar);
+            if(password.equals(ConfPassword)){
+                Boolean insertar = dbHelper.createUser(u);
+                if (insertar == true) {
+                    dbHelper.closeDB();
+                    Toast.makeText(this, "Registro guardado con exito", Toast.LENGTH_SHORT).show();
+                    Intent aceptar = new Intent(this, MainActivity.class);
+                    startActivity(aceptar);
+                } else {
+                    Toast.makeText(this, "ERROR", Toast.LENGTH_SHORT).show();
+                }
+            }else{
+                Toast.makeText(this, "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show();
+            }
         }
+        dbHelper.closeDB();
     }
 }

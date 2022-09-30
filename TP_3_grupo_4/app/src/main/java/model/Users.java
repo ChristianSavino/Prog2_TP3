@@ -14,6 +14,10 @@ public class Users {
         this.password = password;
     }
 
+    public Users() {
+
+    }
+
     public int getId() {
         return id;
     }
@@ -55,4 +59,5 @@ public class Users {
                 ", password='" + password + '\'' +
                 '}';
     }
+
 }

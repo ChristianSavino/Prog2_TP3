@@ -15,14 +15,29 @@ import model.Users;
 
 public class DbHelper extends SQLiteOpenHelper {
 
+    public static final String usersTable = "users";
+    public static final String usersColumnId = "ID_u";
+    public static final String usersNameColumn = "Name";
+    public static final String usersEmailColumn = "Email";
+    public static final String usersPasswordColumn = "Password";
+
+    public static final String parkingsTable = "parkings";
+    public static final String parkingsColumnId = "ID_p";
+    public static final String parkingsUser_idColumn = "user_id"; //!!
+    public static final String parkingsPatentColumn = "Patent";
+    public static final String parkingsTimeColumn = "Time";
+
     public DbHelper(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
     }
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-     sqLiteDatabase.execSQL(BD_Info.usersCreationTable);
-     sqLiteDatabase.execSQL(BD_Info.parkingsCreationTable);
+        String query = "CREATE TABLE IF NOT EXISTS users(ID_u integer primary key autoincrement, Name text, Email text, Password text);";
+        sqLiteDatabase.execSQL(query);
+
+        /*String query2 = "CREATE TABLE IF NOT EXISTS parkings(ID_p integer primary key autoincrement, Patent text, Time integer, foreign key (ID_u) references users(ID_u));";
+        sqLiteDatabase.execSQL(query2);*/
     }
 
     @Override
@@ -40,23 +55,32 @@ public class DbHelper extends SQLiteOpenHelper {
         this.close();
     }
 
-    public void createUser(Users user){
+    public boolean createUser(Users user){
         ContentValues values = new ContentValues();
 
-        values.put(BD_Info.usersEmailColumn,user.getEmail());
-        values.put(BD_Info.usersNameColumn,user.getName());
-        values.put(BD_Info.usersPasswordColumn,user.getPassword());
+        values.put(usersEmailColumn,user.getEmail());
+        values.put(usersNameColumn,user.getName());
+        values.put(usersPasswordColumn,user.getPassword());
 
-        this.getWritableDatabase().insert(BD_Info.usersTable,null,values);
+        long res = this.getWritableDatabase().insert(usersTable,null,values);
+
+        if(res == -1) {
+            return false;
+        }
+        else{ return true; }
     }
 
-    public Cursor consultarUserPass (String name, String password){
+    public boolean consultarUserPass (String name, String password){
         Cursor c = null;
-        c = this.getReadableDatabase().query(BD_Info.usersTable, new String[]{BD_Info.usersColumnId,
-                 BD_Info.usersNameColumn, BD_Info.usersEmailColumn, BD_Info.usersPasswordColumn},
+        c = this.getReadableDatabase().query(usersTable, new String[]{usersColumnId,
+                 usersNameColumn, usersEmailColumn, usersPasswordColumn},
                 "Name like '"+name+"' and Password like '"+password+"'",
                 null, null, null, null);
-        return c ;
+        if(c.getCount()>0){
+            return true;
+        }else{
+            return false;
+        }
     }
 
     public Users getUser(Users user) {
@@ -68,27 +92,27 @@ public class DbHelper extends SQLiteOpenHelper {
     public void createParking(Parkings parkings){
         ContentValues values = new ContentValues();
 
-        values.put(BD_Info.parkingsUser_idColumn,parkings.getUser_id());
-        values.put(BD_Info.parkingsPatentColumn,parkings.getPatent());
-        values.put(BD_Info.parkingsTimeColumn,parkings.getTime());
+        values.put(parkingsUser_idColumn,parkings.getUser_id());
+        values.put(parkingsPatentColumn,parkings.getPatent());
+        values.put(parkingsTimeColumn,parkings.getTime());
 
-        this.getWritableDatabase().insert(BD_Info.parkingsTable,null,values);
+        this.getWritableDatabase().insert(parkingsTable,null,values);
     }
 
     public void deleteParking(Parkings parkings){
         ContentValues values = new ContentValues();
 
-        values.put(BD_Info.parkingsColumnId,parkings.getId());
+        values.put(parkingsColumnId,parkings.getId());
         String id = String.valueOf(parkings.getId());
 
-        this.getWritableDatabase().delete(BD_Info.parkingsTable,"ID=?",new String[]{id});
+        this.getWritableDatabase().delete(parkingsTable,"ID=?",new String[]{id});
     }
 
     public ArrayList<Parkings> getAllParkings()
     {
         ArrayList<Parkings> parkingsList = new ArrayList<Parkings>();
         Cursor mcursor = null;
-        mcursor = this.getReadableDatabase().query(BD_Info.parkingsTable, new String[]{BD_Info.parkingsColumnId,BD_Info.parkingsPatentColumn,BD_Info.parkingsTimeColumn},null,null,null,null,null);
+        mcursor = this.getReadableDatabase().query(parkingsTable, new String[]{parkingsColumnId,parkingsPatentColumn,parkingsTimeColumn},null,null,null,null,null);
         if(mcursor.moveToFirst())
         {
             do{
