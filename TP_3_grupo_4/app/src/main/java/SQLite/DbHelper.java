@@ -23,9 +23,9 @@ public class DbHelper extends SQLiteOpenHelper {
 
     public static final String parkingsTable = "parkings";
     public static final String parkingsColumnId = "ID_p";
-    public static final String parkingsUser_idColumn = "user_id"; //!!
+    public static final String parkingsUser_idColumn = "user_id";
     public static final String parkingsPatentColumn = "Patent";
-    public static final String parkingsTimeColumn = "Time";
+    public static final String parkingsTimeColumn = "time_var";
 
     public DbHelper(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
@@ -34,10 +34,9 @@ public class DbHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         String query = "CREATE TABLE IF NOT EXISTS users(ID_u integer primary key autoincrement, Name text, Email text, Password text);";
+        String query2 = "CREATE TABLE IF NOT EXISTS parkings(ID_p integer primary key autoincrement, Patent text, time_var integer, id_user integer, foreign key (id_user) references users(ID_u));";
         sqLiteDatabase.execSQL(query);
-
-        /*String query2 = "CREATE TABLE IF NOT EXISTS parkings(ID_p integer primary key autoincrement, Patent text, Time integer, foreign key (ID_u) references users(ID_u));";
-        sqLiteDatabase.execSQL(query2);*/
+        sqLiteDatabase.execSQL(query2);
     }
 
     @Override
