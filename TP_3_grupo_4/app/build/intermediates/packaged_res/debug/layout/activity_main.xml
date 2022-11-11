@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/white">
+    android:background="@color/white"
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -17,28 +17,27 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.934" />
+        app:layout_constraintVertical_bias="0.671" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="216dp"
+        android:layout_marginTop="116dp"
         android:text="Inicia sesión para empezar"
         android:textColor="@color/cardview_dark_background"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="181dp"
-        android:layout_height="137dp"
+        android:layout_width="190dp"
+        android:layout_height="148dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,68 +46,64 @@
 
     <EditText
         android:id="@+id/etUsuario"
-        android:layout_width="321dp"
-        android:layout_height="46dp"
-        android:layout_marginBottom="260dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:backgroundTint="@color/cardview_dark_background"
-        android:ems="10"
+        android:ems="15"
+        android:hint="Nombre de usuario"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="Nombre de usuario"
-        android:textColor="@color/cardview_dark_background"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/black"
+        android:textColorHint="@color/cardview_dark_background"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
         android:id="@+id/etNuevaContrasenia"
-        android:layout_width="320dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:backgroundTint="@color/cardview_dark_background"
-        android:ems="10"
+        android:ems="15"
+        android:hint="Contraseña"
         android:inputType="textPassword"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/black"
+        android:textColorHint="@color/cardview_dark_background"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etUsuario"
-        app:layout_constraintVertical_bias="0.014"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/btnIniciarSesion"
         android:layout_width="208dp"
         android:layout_height="48dp"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/custom_button"
-        android:backgroundTint="@null"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/material_dynamic_neutral90"
+        android:onClick="Ingresar"
         android:text="Iniciar Sesion"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.546"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etNuevaContrasenia"
-        app:layout_constraintVertical_bias="0.007" />
+        app:layout_constraintTop_toBottomOf="@+id/etNuevaContrasenia" />
 
     <Button
         android:id="@+id/button"
         style="?attr/materialButtonOutlinedStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:background="?android:attr/selectableItemBackground"
+        android:onClick="Registrarse"
         android:text="Registrarse"
         android:textColor="#0000FF"
-        android:onClick="Registrarse"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnIniciarSesion"
-        app:layout_constraintVertical_bias="0.019"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/btnIniciarSesion" />
 </androidx.constraintlayout.widget.ConstraintLayout>
