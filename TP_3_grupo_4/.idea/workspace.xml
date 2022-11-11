@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33a3be7c-9a4d-4910-b188-9a68c646f9ad" name="Changes" comment="" />
+    <list default="true" id="b93fd363-1b91-4a5b-937a-10c9836046d1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,56 +26,45 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="TP_3_grupo_4" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
       </state>
     </system>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="resourceFile" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="2FDjQbTPeSNYzgeZrSRo9wt0OZb" />
+  <component name="ProjectId" id="2FWhbjTKQQYqYW928xWQzG2Z3Wn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
   </component>
   <component name="RecentsManager">
-    <key name="android.template.-1464247565">
-      <recent name="com.example.tp_3_grupo_4" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\USUARIO\Desktop\Tp3\app\src\main\res\drawable-v24" />
+      <recent name="C:\Users\USUARIO\Desktop\Tp3\app\src\main\res\drawable" />
+      <recent name="C:\Users\USUARIO\Desktop\Tp3\app\src\main\res\layout" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Juani\Documents\GitHub\Prog2_TP3\TP_3_grupo_4\app\src\main\res\mipmap-xhdpi" />
-    </key>
-    <key name="android.template.1614813383">
-      <recent name="com.example.tp_3_grupo_4" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="SQLite" />
+      <recent name="model" />
+      <recent name="com.example.tp3_grupo4" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
-      <module name="TP_3_grupo_4.app.main" />
+      <module name="TP3_Grupo4.app.main" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
@@ -135,27 +124,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="33a3be7c-9a4d-4910-b188-9a68c646f9ad" name="Changes" comment="" />
-      <created>1664033533894</created>
+      <changelist id="b93fd363-1b91-4a5b-937a-10c9836046d1" name="Changes" comment="" />
+      <created>1664613838071</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1664033533894</updated>
+      <updated>1664613838071</updated>
     </task>
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

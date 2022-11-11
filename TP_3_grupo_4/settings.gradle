@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "TP_3_grupo_4"
+rootProject.name = "TP3_Grupo4"
 include ':app'

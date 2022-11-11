@@ -1,90 +1,142 @@
 [
     {
-        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-merged_res-29:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-main-31:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\layout_fragment_gallery.xml.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\layout\\fragment_gallery.xml"
     },
     {
-        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-merged_res-29:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-main-31:\\xml\\data_extraction_rules.xml"
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-merged_res-29:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-main-31:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-merged_res-29:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-main-31:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.tp_3_grupo_4.app-merged_res-29:/layout_activity_main.xml.flat",
-        "source": "com.example.tp_3_grupo_4.app-main-31:/layout/activity_main.xml"
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\layout_activity_home.xml.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\layout\\activity_home.xml"
     },
     {
-        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-merged_res-29:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-main-31:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\layout\\fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-merged_res-29:\\drawable_autoporg.jpg.flat",
-        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-main-31:\\drawable\\autoporg.jpg"
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\drawable_registro.png.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\drawable\\registro.png"
     },
     {
-        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-merged_res-29:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-main-31:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-pngs-36:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-merged_res-29:\\drawable_custom_button.xml.flat",
-        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-main-31:\\drawable\\custom_button.xml"
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\drawable_ic_menu_camera.xml.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\drawable\\ic_menu_camera.xml"
     },
     {
-        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-merged_res-29:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-main-31:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-merged_res-29:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-main-31:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\menu_home.xml.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\menu\\home.xml"
     },
     {
-        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-merged_res-29:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-main-31:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-merged_res-29:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-pngs-24:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-merged_res-29:\\layout_activity_registrarse.xml.flat",
-        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-main-31:\\layout\\activity_registrarse.xml"
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\layout_content_home.xml.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\layout\\content_home.xml"
     },
     {
-        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-merged_res-29:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-main-31:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\layout_activity_registrarse.xml.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\layout\\activity_registrarse.xml"
     },
     {
-        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-merged_res-29:\\drawable_registro.png.flat",
-        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-main-31:\\drawable\\registro.png"
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-merged_res-29:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-main-31:\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\navigation_mobile_navigation.xml.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\navigation\\mobile_navigation.xml"
     },
     {
-        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-merged_res-29:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-main-31:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\layout_nav_header_home.xml.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\layout\\nav_header_home.xml"
     },
     {
-        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-merged_res-29:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-main-31:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.tp3_grupo4.app-merged_res-41:/layout_activity_main.xml.flat",
+        "source": "com.example.tp3_grupo4.app-main-43:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-merged_res-29:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-main-31:\\xml\\backup_rules.xml"
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\drawable_side_nav_bar.xml.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\drawable\\side_nav_bar.xml"
     },
     {
-        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-merged_res-29:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-main-31:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-merged_res-29:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp_3_grupo_4.app-main-31:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\drawable_autoporg.jpg.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\drawable\\autoporg.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\drawable_ic_menu_gallery.xml.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\drawable\\ic_menu_gallery.xml"
+    },
+    {
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\drawable_ic_menu_slideshow.xml.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\drawable\\ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\menu_activity_home_drawer.xml.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\menu\\activity_home_drawer.xml"
+    },
+    {
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\layout_fragment_slideshow.xml.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\layout\\fragment_slideshow.xml"
+    },
+    {
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\layout_app_bar_home.xml.flat",
+        "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\layout\\app_bar_home.xml"
     }
 ]

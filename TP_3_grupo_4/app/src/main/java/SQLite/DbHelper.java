@@ -23,7 +23,7 @@ public class DbHelper extends SQLiteOpenHelper {
 
     public static final String parkingsTable = "parkings";
     public static final String parkingsColumnId = "ID_p";
-    public static final String parkingsUser_idColumn = "user_id";
+    public static final String parkingsUser_idColumn = "id_user";
     public static final String parkingsPatentColumn = "Patent";
     public static final String parkingsTimeColumn = "time_var";
 
@@ -82,29 +82,37 @@ public class DbHelper extends SQLiteOpenHelper {
         }
     }
 
+    public Cursor ObtenerUsu(String userName){
+        Cursor c = this.getWritableDatabase().rawQuery("select Name, Email, ID_u from users where Name like '" + userName + "'", null);
+        c.moveToFirst();
+        return c;
+    }
+
     public Users getUser(Users user) {
         ContentValues values = new ContentValues();
 
         return null;
     }
 
-    public void createParking(Parkings parkings){
-        ContentValues values = new ContentValues();
+    public long createParking(String Patente, String tiempo, String IdUsu){
 
-        values.put(parkingsUser_idColumn,parkings.getUser_id());
-        values.put(parkingsPatentColumn,parkings.getPatent());
-        values.put(parkingsTimeColumn,parkings.getTime());
+        ContentValues Content = new ContentValues();
+        Content.put("Patent",Patente);
+        Content.put("time_var",tiempo);
+        Content.put("id_user",IdUsu);
 
-        this.getWritableDatabase().insert(parkingsTable,null,values);
+        return this.getWritableDatabase().insert("parqueosTable",null,Content);
     }
 
-    public void deleteParking(Parkings parkings){
-        ContentValues values = new ContentValues();
-
-        values.put(parkingsColumnId,parkings.getId());
-        String id = String.valueOf(parkings.getId());
-
-        this.getWritableDatabase().delete(parkingsTable,"ID=?",new String[]{id});
+    public ArrayList<Parkings> ParkingsById(String idUsu){
+        Cursor c = this.getWritableDatabase().rawQuery("select * from parkings where id_user = '" + idUsu + "'", null);
+        ArrayList<Parkings> parkings = new ArrayList<>();
+        if(c.moveToFirst()) {
+            Parkings parking = new Parkings(c.getInt(3), c.getString(0), c.getInt(2), c.getInt(1));
+            parkings.add(parking);
+        }
+        this.close();
+        return parkings;
     }
 
     public ArrayList<Parkings> getAllParkings()
