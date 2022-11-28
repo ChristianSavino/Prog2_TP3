@@ -18,13 +18,21 @@
             android:background="@color/primaryDark"
             app:popupTheme="@style/Theme.TP3_Grupo4.PopupOverlay" />
 
+        <GridView
+            android:id="@+id/parkingView"
+            android:layout_width="wrap_content"
+            android:layout_height="672dp"
+            android:background="#FFFFFF" />
+
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/content_home" />
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_home" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
-        android:layout_width="wrap_content"
+        android:layout_width="79dp"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_marginEnd="@dimen/fab_margin"

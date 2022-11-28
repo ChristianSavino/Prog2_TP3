@@ -101,18 +101,22 @@ public class DbHelper extends SQLiteOpenHelper {
         Content.put("time_var",tiempo);
         Content.put("id_user",IdUsu);
 
-        return this.getWritableDatabase().insert("parqueosTable",null,Content);
+        return this.getWritableDatabase().insert(parkingsTable,null,Content);
     }
 
     public ArrayList<Parkings> ParkingsById(String idUsu){
-        Cursor c = this.getWritableDatabase().rawQuery("select * from parkings where id_user = '" + idUsu + "'", null);
+        Cursor c = this.getWritableDatabase().rawQuery("select ID_p,Patent,time_var,time_var from parkings where id_user = '" + idUsu + "'", null);
         ArrayList<Parkings> parkings = new ArrayList<>();
-        if(c.moveToFirst()) {
-            Parkings parking = new Parkings(c.getInt(3), c.getString(0), c.getInt(2), c.getInt(1));
+        while (c.moveToNext()) {
+            Parkings parking = new Parkings(c.getInt(0), c.getString(1), c.getInt(2), c.getInt(3));
             parkings.add(parking);
         }
         this.close();
         return parkings;
+    }
+
+    public boolean DeleteParking(String idParking) {
+        return this.getWritableDatabase().delete(parkingsTable,"ID_p = "+idParking,null) > 0;
     }
 
     public ArrayList<Parkings> getAllParkings()

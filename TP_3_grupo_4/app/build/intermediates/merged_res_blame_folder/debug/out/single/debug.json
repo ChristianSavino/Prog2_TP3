@@ -72,10 +72,6 @@
         "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\layout\\nav_header_home.xml"
     },
     {
-        "merged": "com.example.tp3_grupo4.app-merged_res-41:/layout_activity_main.xml.flat",
-        "source": "com.example.tp3_grupo4.app-main-43:/layout/activity_main.xml"
-    },
-    {
         "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\drawable_side_nav_bar.xml.flat",
         "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\drawable\\side_nav_bar.xml"
     },
@@ -138,5 +134,9 @@
     {
         "merged": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-merged_res-41:\\layout_app_bar_home.xml.flat",
         "source": "C:\\Users\\Keru\\.gradle\\daemon\\7.3.3\\com.example.tp3_grupo4.app-main-43:\\layout\\app_bar_home.xml"
+    },
+    {
+        "merged": "com.example.tp3_grupo4.app-merged_res-41:/layout_app_bar_home.xml.flat",
+        "source": "com.example.tp3_grupo4.app-main-43:/layout/app_bar_home.xml"
     }
 ]

@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Coding/UTN/Lab5/Prog2_TP3/TP_3_grupo_4/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/Coding/UTN/Lab5/Prog2_TP3/TP_3_grupo_4/app/src/main/res/layout/app_bar_home.xml" value="0.2" />
+        <entry key="..\:/Coding/UTN/Lab5/Prog2_TP3/TP_3_grupo_4/app/src/main/res/layout/content_home.xml" value="0.358695652173913" />
+        <entry key="..\:/Coding/UTN/Lab5/Prog2_TP3/TP_3_grupo_4/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/Users/USUARIO/Desktop/Tp3/app/src/main/res/drawable/side_nav_bar.xml" value="0.23" />
         <entry key="..\:/Users/USUARIO/Desktop/Tp3/app/src/main/res/layout/activity_home.xml" value="0.25677083333333334" />
         <entry key="..\:/Users/USUARIO/Desktop/Tp3/app/src/main/res/layout/activity_main.xml" value="0.25677083333333334" />

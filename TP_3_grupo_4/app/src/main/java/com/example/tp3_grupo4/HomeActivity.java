@@ -11,7 +11,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
 import android.view.Window;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.GridView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -30,7 +33,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.tp3_grupo4.databinding.ActivityMainBinding;
 
+import java.util.ArrayList;
+
 import SQLite.DbHelper;
+import model.Parkings;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -40,6 +46,7 @@ public class HomeActivity extends AppCompatActivity {
     private TextView Nombre;
     private TextView Mail;
     private NavigationView navView;
+    private GridView gridView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,24 +59,30 @@ public class HomeActivity extends AppCompatActivity {
         binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();*/
                 OnclickAdd(view);
             }
         });
         navView = (NavigationView) findViewById(R.id.nav_view);
         Mail = (TextView) navView.getHeaderView(0).findViewById(R.id.tvMail);
         Nombre = (TextView) navView.getHeaderView(0).findViewById(R.id.tvNombre);
+        gridView = (GridView) binding.getRoot().findViewById(R.id.parkingView);
+
         Mail.setText(getIntent().getStringExtra("email"));
         Nombre.setText(getIntent().getStringExtra("userName"));
+        GetParkingsByUserId(getIntent().getStringExtra("IdUsuario"),null);
+
+
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
+
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
+
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
                 .setOpenableLayout(drawer)
                 .build();
+
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
@@ -110,7 +123,7 @@ public class HomeActivity extends AppCompatActivity {
                 || super.onSupportNavigateUp();
     }
 
-    public boolean areValuesValid(EditText Patente, EditText Tiempo){
+    private boolean areValuesValid(EditText Patente, EditText Tiempo){
         if(Patente.getText().toString().isEmpty() || Tiempo.getText().toString().isEmpty())
         {
             Toast.makeText(this,"Debe completar ambos campos.", Toast.LENGTH_LONG).show();
@@ -119,7 +132,7 @@ public class HomeActivity extends AppCompatActivity {
         return true;
     }
 
-    public void OnclickAdd (View view){
+    private void OnclickAdd (View view){
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
 
         // Configura el titulo.
@@ -154,12 +167,67 @@ public class HomeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(areValuesValid(Patente, Tiempo))
                 {
-                    DbHelper h = new DbHelper(HomeActivity.this,"BDP",null,1);
-                    Long fA = h.createParking(Patente.getText().toString(), Tiempo.getText().toString(), "1");
+                    AddNewParking(Patente.getText().toString(), Tiempo.getText().toString(), getIntent().getStringExtra("IdUsuario"));
                     dialog.dismiss();
                 }
             }
         });
     }
 
+    private boolean AddNewParking(String patente, String tiempo, String IdUsuario) {
+        try {
+            DbHelper h = new DbHelper(HomeActivity.this,"BDP",null,1);
+            Long fA = h.createParking(patente,tiempo,IdUsuario);
+            GetParkingsByUserId(IdUsuario,h);
+        } catch (Exception e) {
+            return false;
+        }
+
+        return true;
+    }
+
+    private void GetParkingsByUserId(String idUsuario,DbHelper dbHelper) {
+        if(dbHelper == null)
+            dbHelper = new DbHelper(HomeActivity.this, "BDP", null, 1);
+        ArrayList<Parkings> parkings = dbHelper.ParkingsById(idUsuario);
+        String[] parkingString = new String[parkings.size()];
+        int i = 0;
+        for (Parkings parking : parkings) {
+            parkingString[i] = parking.getPatent() + " | " + parking.getTime();
+            i++;
+        }
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, parkingString);
+
+        gridView.setAdapter(adapter);
+
+
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position,long id) {
+                DeleteParking(idUsuario,String.valueOf(parkings.get(position).getId()));
+            }
+        });
+    }
+
+    private void DeleteParking(String idUsuario, String idParking){
+        AlertDialog.Builder builder = new AlertDialog.Builder(HomeActivity.this);
+        builder.setMessage("¿Desea eliminar este parking?")
+                .setPositiveButton("SI", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        DbHelper h = new DbHelper(HomeActivity.this,"BDP",null,1);
+                        h.DeleteParking(idParking);
+                        Toast.makeText(getApplicationContext(),"Parking borrado con exito",Toast.LENGTH_LONG).show();
+                        GetParkingsByUserId(idUsuario,h);
+                    }
+                })
+                .setNegativeButton("NO", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                    }
+                }).show();
+    }
 }
