@@ -190,18 +190,10 @@ public class HomeActivity extends AppCompatActivity {
         if(dbHelper == null)
             dbHelper = new DbHelper(HomeActivity.this, "BDP", null, 1);
         ArrayList<Parkings> parkings = dbHelper.ParkingsById(idUsuario);
-        String[] parkingString = new String[parkings.size()];
-        int i = 0;
-        for (Parkings parking : parkings) {
-            parkingString[i] = parking.getPatent() + " | " + parking.getTime();
-            i++;
-        }
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, parkingString);
+        ParkingAdapter adapter = new ParkingAdapter(this,parkings);
 
         gridView.setAdapter(adapter);
-
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

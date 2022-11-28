@@ -42,6 +42,7 @@ id nav_home
 id nav_host_fragment_content_main
 id nav_slideshow
 id nav_view
+id parkingInfo
 id parkingView
 id textView2
 id textView3
@@ -58,6 +59,7 @@ layout fragment_gallery
 layout fragment_home
 layout fragment_slideshow
 layout nav_header_home
+layout parking_list_layout
 menu activity_home_drawer
 menu home
 mipmap ic_launcher

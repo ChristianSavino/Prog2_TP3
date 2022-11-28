@@ -22,6 +22,9 @@
             android:id="@+id/parkingView"
             android:layout_width="wrap_content"
             android:layout_height="672dp"
+            android:numColumns="2"
+            android:horizontalSpacing="6dp"
+            android:verticalSpacing="6dp"
             android:background="#FFFFFF" />
 
     </com.google.android.material.appbar.AppBarLayout>
